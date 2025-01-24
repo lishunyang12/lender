@@ -4,11 +4,16 @@ public class Loan {
     private boolean isPaid;
     private double interestRate;
 
+    public static int maxLoanAmount = 0;
+
     public Loan(String borrower, int amount, double interestRate) {
         this.borrower = borrower;
         this.amount = amount;
         this.interestRate = interestRate;
         this.isPaid = false;
+        if (amount > maxLoanAmount) {
+            maxLoanAmount = amount;
+        }
     }
 
     public void setAsPaid() {
