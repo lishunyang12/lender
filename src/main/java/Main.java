@@ -16,6 +16,6 @@ public class Main {
         m2.listLoans();
         System.out.println("profit from m2: " + m2.calculateProfitEarned());
 
-        System.out.println("Max loan amount :" + Loan.maxLoanAmount);
+        System.out.println("Max loan amount is： " + Loan.maxLoanAmount);
     }
 }
